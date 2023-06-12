@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+   box-sizing: border-box;
+   font-family: 'Pacifico', cursive;
+}
+
+body {
+    background-color: black;
+}
+
+h1 {
+    padding-top: 40px;
+    text-align: center;
+    font-size: 4rem;
+    color: aliceblue;
+}
+
+
+
+.containerBotones {
+   font-size: x-large;
+}
+
+.containerContadores {
+    padding-top: 1%;
+    font-size: 2rem;
+    color: rgb(30, 190, 43);
+
+}
+
+
+.containerFoto{
+
+    height:30rem;
+}
+
+
+.contenedorCentral {
+
+    background-image: url("img/tapete.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 45vh;
+
+}
+
+@keyframes giro {
+    from {
+        transform : rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#imgAnimated {
+    animation-name: giro;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+    animation-iteration-count: 12;
+}
+
+
+.moneda {
+    
+    width: 12vh;
+}
+
+.boton {
+    --bs-btn-padding-y: 2rem; --bs-btn-padding-x: 2rem; 
+    background-color: rgb(60, 138, 60);
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 2rem;
+        padding-top: 25px;
+    }
+    .containerFoto{
+
+        height:22rem;
+    }
+    .boton {
+        --bs-btn-padding-y: 1rem; --bs-btn-padding-x: 1rem; 
+      
+    }
+    
+    
+
+}
